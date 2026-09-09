@@ -1,0 +1,50 @@
+[
+  {
+    "id": "home-1",
+    "status": "Available",
+    "featured": true,
+    "title": "Property One",
+    "location": "Add city / neighborhood",
+    "rent": 1450,
+    "deposit": "Add deposit",
+    "beds": 3,
+    "baths": 2,
+    "sqft": "1,450",
+    "available": "Available now",
+    "image": "assets/property-placeholder-1.svg",
+    "description": "Replace this sample text with a concise description of the home, neighborhood, upgrades, yard, parking, and other important features.",
+    "amenities": ["Add feature", "Add feature", "Add feature"]
+  },
+  {
+    "id": "home-2",
+    "status": "Coming Soon",
+    "featured": true,
+    "title": "Property Two",
+    "location": "Add city / neighborhood",
+    "rent": 1750,
+    "deposit": "Add deposit",
+    "beds": 4,
+    "baths": 2.5,
+    "sqft": "1,900",
+    "available": "Add availability date",
+    "image": "assets/property-placeholder-2.svg",
+    "description": "Replace this sample text with the property's real selling points and any important lease information applicants should know before applying.",
+    "amenities": ["Add feature", "Add feature", "Add feature"]
+  },
+  {
+    "id": "home-3",
+    "status": "Available",
+    "featured": true,
+    "title": "Property Three",
+    "location": "Add city / neighborhood",
+    "rent": 1200,
+    "deposit": "Add deposit",
+    "beds": 2,
+    "baths": 1,
+    "sqft": "1,050",
+    "available": "Available now",
+    "image": "assets/property-placeholder-3.svg",
+    "description": "Use this area for a warm, accurate property description. Keep the facts specific and avoid vague or misleading marketing claims.",
+    "amenities": ["Add feature", "Add feature", "Add feature"]
+  }
+]
