@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Browse available rental homes from Bravion Properties.">
+  <title>Available Homes | Bravion Properties</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html"><span class="brand-mark">B</span><span class="brand-text"><strong>Bravion</strong><small>Properties</small></span></a><button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button><nav id="main-nav" class="main-nav"><a href="index.html">Home</a><a class="active" href="properties.html">Available Homes</a><a href="apply.html">Apply</a><a href="contact.html">Contact</a></nav></div></header>
+  <main id="main">
+    <section class="page-hero"><div class="container"><p class="eyebrow light">Available Rentals</p><h1>Find the right home for your next chapter.</h1><p>Use the filters below to explore current availability. Property details can be updated from one simple data file.</p></div></section>
+    <section class="section">
+      <div class="container">
+        <div class="filter-bar">
+          <label>Bedrooms<select id="bed-filter"><option value="all">Any</option><option value="1">1+</option><option value="2">2+</option><option value="3">3+</option><option value="4">4+</option></select></label>
+          <label>Maximum Rent<select id="price-filter"><option value="all">Any</option><option value="1000">$1,000</option><option value="1500">$1,500</option><option value="2000">$2,000</option><option value="2500">$2,500</option><option value="3000">$3,000</option></select></label>
+          <button id="reset-filters" class="btn btn-secondary" type="button">Reset Filters</button>
+        </div>
+        <div id="property-list" class="property-grid"></div>
+        <div id="no-properties" class="empty-state" hidden><h2>No homes match those filters.</h2><p>Reset the filters or contact Bravion Properties about upcoming availability.</p><a class="btn btn-navy" href="contact.html">Contact Us</a></div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="index.html"><span class="brand-mark">B</span><span class="brand-text"><strong>Bravion</strong><small>Properties</small></span></a><p>Professional rental housing with a clear, applicant-friendly process.</p></div><div><strong>Explore</strong><a href="properties.html">Available Homes</a><a href="apply.html">Apply</a><a href="contact.html">Contact</a></div><div><strong>Applicant Resources</strong><a href="apply.html#criteria">Rental Criteria</a><a href="apply.html#process">Application Process</a><a href="contact.html">Request Help</a></div><div><strong>Fair Housing</strong><p>Bravion Properties supports equal housing opportunity and does not discriminate on the basis of any protected characteristic under applicable law.</p></div></div><div class="container footer-bottom"><span>© <span id="year"></span> Bravion Properties.</span><span>Equal Housing Opportunity</span></div></footer>
+  <script src="js/app.js"></script>
+</body>
+</html>

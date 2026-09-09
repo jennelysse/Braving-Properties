@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Review rental criteria and begin an application with Bravion Properties.">
+  <title>Apply | Bravion Properties</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html"><span class="brand-mark">B</span><span class="brand-text"><strong>Bravion</strong><small>Properties</small></span></a><button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button><nav id="main-nav" class="main-nav"><a href="index.html">Home</a><a href="properties.html">Available Homes</a><a class="active" href="apply.html">Apply</a><a href="contact.html">Contact</a></nav></div></header>
+  <main id="main">
+    <section class="page-hero"><div class="container"><p class="eyebrow light">Application Center</p><h1>Know the process before you apply.</h1><p>Review the rental criteria, complete the initial applicant profile, and continue to the secure screening and fee step when ready.</p></div></section>
+
+    <section id="criteria" class="section">
+      <div class="container two-column criteria-layout">
+        <div>
+          <p class="eyebrow">Before You Apply</p><h2>Rental criteria should never be a surprise.</h2>
+          <p>The items below are intentionally editable placeholders. Bravion Properties should publish its actual written screening standards here before accepting applications.</p>
+        </div>
+        <div class="criteria-card">
+          <h3>Rental Criteria</h3>
+          <ul>
+            <li><strong>Income:</strong> Add Bravion’s required income standard.</li>
+            <li><strong>Rental history:</strong> Add the required rental-history standard.</li>
+            <li><strong>Credit:</strong> Add the actual credit-screening policy.</li>
+            <li><strong>Background screening:</strong> Add the lawful screening criteria used by Bravion.</li>
+            <li><strong>Occupancy:</strong> Add the applicable occupancy standard.</li>
+            <li><strong>Pets:</strong> Add the pet policy, fees, restrictions, and assistance-animal procedure.</li>
+          </ul>
+          <p class="small-note">Do not publish screening criteria until they accurately reflect Bravion Properties’ actual policy and applicable law.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="section section-soft">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">Start Here</p><h2>Initial Applicant Profile</h2><p>This form intentionally avoids Social Security numbers, government ID numbers, bank information, and other highly sensitive screening data. Those items belong in a secure screening platform—not a public GitHub Pages form.</p></div>
+        <div class="progress-wrap" aria-label="Application progress"><div class="progress-labels"><span class="active">1. Applicant</span><span>2. Household</span><span>3. Review</span><span>4. Secure Screening</span></div><div class="progress-track"><div id="progress-fill" class="progress-fill" style="width:25%"></div></div></div>
+        <form id="application-form" class="application-card" novalidate>
+          <section class="form-step active" data-step="1">
+            <h3>Applicant Information</h3>
+            <div class="form-grid">
+              <label>First Name<input name="firstName" autocomplete="given-name" required></label>
+              <label>Last Name<input name="lastName" autocomplete="family-name" required></label>
+              <label>Email<input type="email" name="email" autocomplete="email" required></label>
+              <label>Phone<input type="tel" name="phone" autocomplete="tel" required></label>
+              <label class="full">Property of Interest<select name="property" id="property-select" required><option value="">Select a property</option></select></label>
+            </div>
+          </section>
+          <section class="form-step" data-step="2">
+            <h3>Household Information</h3>
+            <div class="form-grid">
+              <label>Desired Move-In Date<input type="date" name="moveInDate" required></label>
+              <label>Number of Occupants<input type="number" name="occupants" min="1" max="20" required></label>
+              <label>Number of Pets<input type="number" name="pets" min="0" max="10" value="0"></label>
+              <label>Approximate Monthly Household Income<input type="number" name="income" min="0" step="100" inputmode="numeric" required></label>
+              <label class="full">Questions or Notes<textarea name="notes" rows="4" placeholder="Optional"></textarea></label>
+            </div>
+          </section>
+          <section class="form-step" data-step="3">
+            <h3>Review and Acknowledge</h3>
+            <div id="application-review" class="review-box"></div>
+            <label class="checkbox-row"><input type="checkbox" name="acknowledge" required><span>I understand this is an initial applicant profile and does not constitute approval, a lease, or a complete screening application.</span></label>
+          </section>
+          <section class="form-step" data-step="4">
+            <h3>Continue to Secure Screening</h3>
+            <p>Your initial profile is ready. Bravion Properties can connect this button to its approved screening provider and application-fee payment page.</p>
+            <div class="secure-callout"><strong>Application Fee</strong><span id="fee-display">Configured by Bravion Properties</span></div>
+            <a id="screening-link" class="btn btn-gold disabled-link" href="#" aria-disabled="true">Secure Screening Link Not Yet Configured</a>
+            <p class="small-note">The live site should use a reputable screening/payment provider. Do not request SSNs, bank details, or full identity documents through email or a static web form.</p>
+          </section>
+          <div class="form-actions"><button id="prev-step" class="btn btn-secondary" type="button" hidden>Back</button><button id="next-step" class="btn btn-navy" type="button">Continue</button></div>
+          <p id="form-message" class="form-message" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="index.html"><span class="brand-mark">B</span><span class="brand-text"><strong>Bravion</strong><small>Properties</small></span></a><p>Professional rental housing with a clear, applicant-friendly process.</p></div><div><strong>Explore</strong><a href="properties.html">Available Homes</a><a href="apply.html">Apply</a><a href="contact.html">Contact</a></div><div><strong>Applicant Resources</strong><a href="#criteria">Rental Criteria</a><a href="#process">Application Process</a><a href="contact.html">Request Help</a></div><div><strong>Fair Housing</strong><p>Bravion Properties supports equal housing opportunity and does not discriminate on the basis of any protected characteristic under applicable law.</p></div></div><div class="container footer-bottom"><span>© <span id="year"></span> Bravion Properties.</span><span>Equal Housing Opportunity</span></div></footer>
+  <script src="js/app.js"></script>
+</body>
+</html>

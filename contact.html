@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact Bravion Properties about rental availability and applications.">
+  <title>Contact | Bravion Properties</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html"><span class="brand-mark">B</span><span class="brand-text"><strong>Bravion</strong><small>Properties</small></span></a><button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button><nav id="main-nav" class="main-nav"><a href="index.html">Home</a><a href="properties.html">Available Homes</a><a href="apply.html">Apply</a><a class="active" href="contact.html">Contact</a></nav></div></header>
+  <main id="main">
+    <section class="page-hero"><div class="container"><p class="eyebrow light">Contact Bravion</p><h1>Questions are welcome.</h1><p>Reach out about a property, the rental process, availability, or an application in progress.</p></div></section>
+    <section class="section"><div class="container contact-layout">
+      <div class="contact-card"><p class="eyebrow">Get In Touch</p><h2>We’re here to help.</h2><p>Update the contact information below before publishing the website.</p><div class="contact-detail"><span>Email</span><strong>your-email@example.com</strong></div><div class="contact-detail"><span>Phone</span><strong>(000) 000-0000</strong></div><div class="contact-detail"><span>Office Hours</span><strong>Add Bravion’s office hours</strong></div><p class="small-note">For your security, do not send Social Security numbers, banking information, or identity documents by ordinary email.</p></div>
+      <form id="contact-form" class="application-card">
+        <h3>Send a Message</h3>
+        <div class="form-grid"><label>First Name<input name="firstName" required></label><label>Last Name<input name="lastName" required></label><label>Email<input type="email" name="email" required></label><label>Phone<input type="tel" name="phone"></label><label class="full">Topic<select name="topic"><option>Property Availability</option><option>Application Question</option><option>Current Resident</option><option>General Question</option></select></label><label class="full">Message<textarea name="message" rows="6" required></textarea></label></div>
+        <button class="btn btn-navy" type="submit">Prepare Message</button><p id="contact-message" class="form-message" role="status"></p>
+      </form>
+    </div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="index.html"><span class="brand-mark">B</span><span class="brand-text"><strong>Bravion</strong><small>Properties</small></span></a><p>Professional rental housing with a clear, applicant-friendly process.</p></div><div><strong>Explore</strong><a href="properties.html">Available Homes</a><a href="apply.html">Apply</a><a href="contact.html">Contact</a></div><div><strong>Applicant Resources</strong><a href="apply.html#criteria">Rental Criteria</a><a href="apply.html#process">Application Process</a><a href="contact.html">Request Help</a></div><div><strong>Fair Housing</strong><p>Bravion Properties supports equal housing opportunity and does not discriminate on the basis of any protected characteristic under applicable law.</p></div></div><div class="container footer-bottom"><span>© <span id="year"></span> Bravion Properties.</span><span>Equal Housing Opportunity</span></div></footer>
+  <script src="js/app.js"></script>
+</body>
+</html>
